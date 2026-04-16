@@ -1,0 +1,20 @@
+<section class="content">
+    <h2>Kostenrechner für Stutfohlenaufzucht</h2>
+
+    <form method="post" action="/rechner">
+        <label for="alter">Aktuelles Alter (in Jahren):</label><br>
+        <input type="text" id="alter" name="alter" value="$alter" placeholder="z.B. 0.5"><br>
+
+        <label for="dauer">Dauer der Aufzucht (in Jahren):</label><br>
+        <input type="text" id="dauer" name="dauer" value="$dauer" placeholder="z.B. 3"><br>
+
+        <button type="submit">Jetzt berechnen</button>
+    </form>
+
+    $if zukunftsalter and gesamtkosten:
+        <div class="ergebnisse">
+            <h3>Ergebnisse</h3>
+            <p><strong>Zukunftsalter:</strong> $zukunftsalter Jahre</p>
+            <p><strong>Gesamtkosten:</strong> $"%.2f" % gesamtkosten €</p>
+        </div>
+</section>

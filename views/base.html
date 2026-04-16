@@ -1,0 +1,31 @@
+$def with (content)
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fohlenhof Matzenweiler</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fohlenhof Matzenweiler</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/rechner">Kostenrechner</a></li>
+                <li><a href="/galerie">Galerie</a></li>
+                <li><a href="/impressum">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        $:content
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fohlenhof Matzenweiler. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
